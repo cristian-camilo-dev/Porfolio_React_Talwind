@@ -1,9 +1,11 @@
-function App () {
-  return (
-    <div>
-      <h1 className="bg-red-600">hola</h1>
-    </div>
-  )
+import NavBar from "./components/NavBar";
+
+function App() {
+	return (
+		<div>
+			<NavBar/>
+		</div>
+	);
 }
 
-export default App
+export default App;
