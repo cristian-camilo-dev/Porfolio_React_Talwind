@@ -31,7 +31,7 @@ const NavBar = () => {
 	const [showLinks, setShowLinks] = useState(false);
 
 	return (
-		<header className='flex justify-between items-center w-full h-20 text-white fixed bg-blue-800 px-4'>
+		<header className='flex justify-between items-center w-full h-20 text-white fixed bg-slate-900 px-4'>
 			<div>
 				<h1 className='font-GreatVibes text-5xl ml-2'>Cristian R.</h1>
 			</div>
@@ -55,7 +55,7 @@ const NavBar = () => {
 				{showLinks ? <FaTimes size={30} /> : <FaBars size={30} />}
 			</div>
 			{showLinks && (
-				<ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-blue-800 '>
+				<ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-800 to-slate-900'>
 				{links.map((link) => {
 					const { id, url } = link;
 					return (
