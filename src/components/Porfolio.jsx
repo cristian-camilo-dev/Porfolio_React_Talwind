@@ -11,42 +11,42 @@ const Porfolio = () => {
 			id: 1,
 			src: cripto,
 			alt: 'Web criptomonedas',
-            url : 'https://github.com/cristian-camilo-dev/Cotizador-Criptos'
+			url: 'https://github.com/cristian-camilo-dev/Cotizador-Criptos',
 		},
 		{
 			id: 2,
 			src: presupuesto,
 			alt: 'Presupuesto',
-            url : 'https://github.com/cristian-camilo-dev/aplicacion-presupuestos-javascript'
+			url: 'https://github.com/cristian-camilo-dev/aplicacion-presupuestos-javascript',
 		},
 		{
 			id: 3,
 			src: movies,
 			alt: 'Peliculas',
-            url : 'https://github.com/cristian-camilo-dev/async-landingpage'
+			url: 'https://github.com/cristian-camilo-dev/async-landingpage',
 		},
 		{
 			id: 4,
 			src: todoList,
 			alt: 'todo List',
-            url : 'https://github.com/cristian-camilo-dev/TodoList'
+			url: 'https://github.com/cristian-camilo-dev/TodoList',
 		},
 		{
 			id: 5,
 			src: mentor,
 			alt: 'Front Mentor',
-            url : 'https://github.com/cristian-camilo-dev/landing-page-frontmentor-Practica'
+			url: 'https://github.com/cristian-camilo-dev/landing-page-frontmentor-Practica',
 		},
 		{
 			id: 6,
 			src: taller,
 			alt: 'Taller',
-            url : 'https://github.com/cristian-camilo-dev/javascript-html-css'
+			url: 'https://github.com/cristian-camilo-dev/javascript-html-css',
 		},
 	];
 
 	return (
-		<div name='porfolio' className='bg-slate-900 w-full text-slate-400 '>
+		<div name='Proyectos' className='bg-slate-900  w-full text-slate-400 '>
 			<div
 				className='
                 max-w-screen-lg
@@ -103,7 +103,7 @@ const Porfolio = () => {
 							/>
 							<div className='flex items-center justify-center'>
 								<h3>{project.alt}</h3>
-								<a href={project.url} target='_blank' rel='noreferrer' >
+								<a href={project.url} target='_blank' rel='noreferrer'>
 									<button className='w-1/2 px-6 py-3 m-4 text-white duration-200 hover:scale-105'>
 										Ver código
 									</button>

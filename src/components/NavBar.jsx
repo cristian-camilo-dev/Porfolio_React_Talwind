@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const links = [
 	{
@@ -44,33 +45,41 @@ const NavBar = () => {
 							key={id}
 							className='px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200'
 						>
-							<a href='#'>{url}</a>
+							<Link to={url} smooth={true} duration={500}>
+								{url}
+							</Link>
 						</li>
 					);
 				})}
 			</ul>
-			<div 
-			onClick={() => setShowLinks(!showLinks)}
-			className='cursor-pointer pr-4 z-10 text-white md:hidden'>
+			<div
+				onClick={() => setShowLinks(!showLinks)}
+				className='cursor-pointer pr-4 z-10 text-white md:hidden'
+			>
 				{showLinks ? <FaTimes size={30} /> : <FaBars size={30} />}
 			</div>
 			{showLinks && (
 				<ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-slate-800 to-slate-900'>
-				{links.map((link) => {
-					const { id, url } = link;
-					return (
-						<li
-							key={id}
-							className='px-4 cursor-pointer capitalize text-4xl py-6 text-white hover:scale-105 duration-200'
-						>
-							<a href='#'>{url}</a>
-						</li>
-					);
-				})}
-			</ul>
+					{links.map((link) => {
+						const { id, url } = link;
+						return (
+							<li
+								key={id}
+								className='px-4 cursor-pointer capitalize text-4xl py-6 text-white hover:scale-105 duration-200'
+							>
+								<Link
+									onClick={() => setShowLinks(!showLinks)}
+									to={url}
+									smooth={true}
+									duration={500}
+								>
+									{url}
+								</Link>
+							</li>
+						);
+					})}
+				</ul>
 			)}
-
-
 		</header>
 	);
 };

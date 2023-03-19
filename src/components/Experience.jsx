@@ -241,7 +241,7 @@ const Experience = () => {
 	];
 
 	return (
-		<div name='experience' className='bg-slate-900 w-full text-slate-400 '>
+		<div name='Experiencia' className='bg-slate-900 w-full text-slate-400 '>
 			<div
 				className='
                 max-w-screen-lg

@@ -1,8 +1,8 @@
 const About = () => {
 	return (
 		<div
-			name='about'
-			className='w-full h-screen bg-slate-900  text-slate-400  '
+			name='Sobre mi'
+			className='w-full h-screen  bg-slate-900  text-slate-400  '
 		>
 			<div
 				className='max-w-screen-lg p-4 mx-auto flex flex-col
