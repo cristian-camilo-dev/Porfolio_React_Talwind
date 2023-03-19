@@ -9,7 +9,7 @@ const About = () => {
                 justify-center w-full h-full '
 			>
 				<div className='pb-8 '>
-					<p className='text-4xl font-bold inline border-b-4 border-white '>
+					<p className='text-4xl font-bold inline border-b-4 border-gray-500 text-white '>
 						Sobre Mi
 					</p>
 				</div>
